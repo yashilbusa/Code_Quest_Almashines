@@ -30,8 +30,8 @@ Run the Application
 
 ### 4. Log In to Access the App
 To access the contact manager, log in using the following demo credentials:
-Username: admin
-Password: admin123
+- ** Username: admin **
+- ** Password: admin123 **
 
 After logging in, you will be able to perform CRUD operations on contacts, merge duplicates, and search for contacts.
 
