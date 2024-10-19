@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Login from "./components/Login";
+import ContactForm from "./components/ContactForm";
+import ContactList from "./components/ContactList";
+import MergeDuplicates from "./components/MergeDuplicates";
 
-function App() {
+const App = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [contacts, setContacts] = useState([]);
+
+  const addContact = (contact) => {
+    setContacts([...contacts, contact]);
+  };
+
+  const deleteContact = (index) => {
+    setContacts(contacts.filter((_, i) => i !== index));
+  };
+
+  const mergeDuplicates = (contact1, contact2, mergedContact) => {
+    setContacts(
+      contacts
+        .filter((contact) => contact !== contact1 && contact !== contact2)
+        .concat(mergedContact)
+    );
+  };
+
+  if (!loggedIn) {
+    return <Login setLoggedIn={setLoggedIn} />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Contact Manager</h1>
+      <ContactForm addContact={addContact} />
+      <ContactList contacts={contacts} deleteContact={deleteContact} />
+      <MergeDuplicates contacts={contacts} mergeDuplicates={mergeDuplicates} />
     </div>
   );
-}
+};
 
 export default App;
