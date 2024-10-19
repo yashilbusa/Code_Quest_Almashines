@@ -1,5 +1,6 @@
 // src/App.js
 import React, { useState } from "react";
+import './styles.css';
 import Login from "./components/Login";
 import ContactForm from "./components/ContactForm";
 import ContactList from "./components/ContactList";

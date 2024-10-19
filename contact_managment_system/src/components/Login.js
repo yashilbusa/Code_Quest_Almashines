@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './styles.css';
 
 const Login = ({ setLoggedIn }) => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });

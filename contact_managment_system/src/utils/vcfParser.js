@@ -1,5 +1,6 @@
 // src/utils/vcfParser.js
 import VCF from "vcf";
+import './styles.css';
 
 // Function to import contacts from a VCF file
 export const importContactsFromVCF = (file) => {
