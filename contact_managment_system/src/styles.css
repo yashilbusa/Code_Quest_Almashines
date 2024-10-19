@@ -1,13 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
   
   .container {
     width: 60%;
@@ -41,15 +41,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100%;
   }
   
   .login-form {
-    width: 300px;
+    width: 400px; /* Fixed width for the login form */
     padding: 30px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
   }
   
   .login-form h2 {
@@ -67,16 +68,39 @@ body {
     font-size: 16px;
   }
   
-  .login-form button {
+  .login-button {
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for background and transform */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Button scaling on hover */
   }
   
   .error-message {
     color: red;
     text-align: center;
     margin-top: 10px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   /* Contact Form */
@@ -145,3 +169,4 @@ body {
     margin-top: 20px;
   }
   
+
