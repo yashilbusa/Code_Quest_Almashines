@@ -1,0 +1,47 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:John Doe
+EMAIL:johndoe@example.com
+TEL:+1234567890
+CATEGORIES:Family
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Jane Smith
+EMAIL:janesmith@example.com
+TEL:+0987654321
+CATEGORIES:Work
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Michael Johnson
+EMAIL:michael.j@example.com
+TEL:+1122334455
+CATEGORIES:Friends
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Emily Davis
+EMAIL:emily.d@example.com
+TEL:+5566778899
+CATEGORIES:Colleagues
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:David Brown
+EMAIL:david.brown@example.com
+TEL:+6677889900
+CATEGORIES:Family,Friends
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Sarah Lee
+EMAIL:sarah.lee@example.com
+TEL:+7788990011
+CATEGORIES:VIP
+END:VCARD
