@@ -37,3 +37,11 @@ EMAIL:david.brown@example.com
 TEL:+91 9197532869
 CATEGORIES:Family,Friends
 END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Yashil Busa
+EMAIL:yashilpatel1914@gmail.com
+TEL:+91 8234567890
+CATEGORIES:Home
+END:VCARD
