@@ -19,7 +19,7 @@ This is a simple **React.js** web application for managing contacts, allowing us
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-repo/contact-manager-app.git
+git clone [https://github.com/your-repo/contact-manager-app.git](https://github.com/yashilbusa/Code_Quest_Almashines/tree/main)
 cd contact-manager-app
 
 ### 2. Install Dependencies
