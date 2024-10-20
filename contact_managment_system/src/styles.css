@@ -5,36 +5,28 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start; 
+  min-height: 100vh;
 }
-  
-  .container {
-    width: 60%;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  h1, h3 {
-    text-align: center;
-    color: #333;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+
+html, body {
+  height: 100%; 
+  overflow-y: auto; 
+}
+
+.container {
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+h1, h3 {
+  text-align: center;
+  color: #333;
+}
   
   /* Login Form */
   .login-container {
@@ -45,12 +37,12 @@ body {
   }
   
   .login-form {
-    width: 400px; /* Fixed width for the login form */
+    width: 400px; 
     padding: 30px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+    animation: fadeIn 0.5s ease-in-out; 
   }
   
   .login-form h2 {
@@ -77,12 +69,12 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Transition for background and transform */
+    transition: background-color 0.3s, transform 0.3s; 
   }
   
   .login-button:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Button scaling on hover */
+    transform: scale(1.05); 
   }
   
   .error-message {
@@ -117,9 +109,10 @@ body {
     border: 1px solid #ddd;
   }
   
-  .contact-list {
-    list-style: none;
-    padding: 0;
+  .contact-list-container {
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
   }
   
   .contact-item {
@@ -135,6 +128,11 @@ body {
   
   .contact-item button {
     background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   .contact-item button:hover {
