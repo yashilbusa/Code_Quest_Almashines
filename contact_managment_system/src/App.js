@@ -10,6 +10,7 @@ import { importContactsFromVCF, exportContactsToVCF } from "./utils/vcfParser";
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [contacts, setContacts] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const addContact = (contact) => {
     setContacts([...contacts, contact]);
@@ -46,6 +47,16 @@ const App = () => {
     exportContactsToVCF(contacts);
   };
 
+  // Filter contacts by search query
+  const filteredContacts = contacts.filter((contact) => {
+    const searchText = searchQuery.toLowerCase();
+    return (
+      contact.name.toLowerCase().includes(searchText) ||
+      contact.email.toLowerCase().includes(searchText) ||
+      (contact.tags && contact.tags.some(tag => tag.toLowerCase().includes(searchText)))
+    );
+  });
+
   if (!loggedIn) {
     return <Login setLoggedIn={setLoggedIn} />;
   }
@@ -53,8 +64,15 @@ const App = () => {
   return (
     <div>
       <h1>Contact Manager</h1>
+      <input
+        type="text"
+        placeholder="Search by Name or Email"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-bar"
+      />
       <ContactForm addContact={addContact} />
-      <ContactList contacts={contacts} deleteContact={deleteContact} />
+      <ContactList contacts={filteredContacts} deleteContact={deleteContact} />
       <MergeDuplicates contacts={contacts} mergeDuplicates={mergeDuplicates} />
 
       {/* Import/Export Section */}
