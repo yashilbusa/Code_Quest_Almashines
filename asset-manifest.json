@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Code_Quest_Almashines/static/css/main.ee29b5b7.css",
+    "main.js": "/Code_Quest_Almashines/static/js/main.817db4d1.js",
+    "static/js/511.8a6f9ed1.chunk.js": "/Code_Quest_Almashines/static/js/511.8a6f9ed1.chunk.js",
+    "index.html": "/Code_Quest_Almashines/index.html",
+    "main.ee29b5b7.css.map": "/Code_Quest_Almashines/static/css/main.ee29b5b7.css.map",
+    "main.817db4d1.js.map": "/Code_Quest_Almashines/static/js/main.817db4d1.js.map",
+    "511.8a6f9ed1.chunk.js.map": "/Code_Quest_Almashines/static/js/511.8a6f9ed1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee29b5b7.css",
+    "static/js/main.817db4d1.js"
+  ]
+}
