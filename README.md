@@ -16,7 +16,7 @@ To access the contact manager, log in using the following demo credentials:
 - **Contact Import/Export**: Support for importing/exporting contacts in VCF format.
 - **Duplicate Contact Merging**: Identify and merge duplicate contacts based on name, phone, or email.
 - **Basic Authentication**: Simple login system to access the app.
-- **Search and Tagging** (Optional): Search contacts by name, email, and tag them for better filtering.
+- **Search and Tagging** : Search contacts by name or email for better filtering.
 
 ## Prerequisites
 
