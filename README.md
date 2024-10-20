@@ -1,4 +1,4 @@
-# Contact Manager Application
+# Contact Managment System
 
 This is a simple **React.js** web application for managing contacts, allowing users to perform CRUD operations, import/export contacts, merge duplicate contacts, and search contacts. The application also includes a basic login system.
 
