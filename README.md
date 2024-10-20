@@ -5,7 +5,7 @@ This is a simple **React.js** web application for managing contacts, allowing us
 ## DEMO Of Project
 [(https://yashilbusa.github.io/Code_Quest_Almashines)](https://yashilbusa.github.io/Code_Quest_Almashines)
 
-### 4. Log In to Access the App
+### Log In to Access the Web App
 To access the contact manager, log in using the following demo credentials:
 - Username: admin 
 - Password: admin123
